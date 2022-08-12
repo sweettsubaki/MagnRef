@@ -1,7 +1,47 @@
-* {
-    background-color: #003366;
-}
-
 h1 {
     color: white;
+}
+body, html {
+    background-color: #2b2c5a;
+
+    width: 100%;
+    height: 100%;
+}
+
+.container {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+}
+.Menu {
+    flex-grow: 0.5;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+main {
+    flex-grow: 1;
+    display: flex;
+    justify-content: space-between;
+}
+
+.Navigation {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+footer {
+    height: fit-content;
+    display: flex;
+    justify-content: space-evenly;
+}
+header, main, footer {
+    flex-shrink: 0;
 }
